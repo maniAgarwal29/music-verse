@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MusicVerse</title>
+</head>
+<body class="bg-slate-300">
+    <nav class="font-sans">
+        <ul class="flex h-16 bg-black text-gray-300 items-center ">
+            <li class="w-20 flex items-center font-bold mx-1"><img src="logo.jpeg" alt="MusicVerse" >MusicVerse</li>
+            <li class="mx-28">Home</li>
+            <li class="-mx-20">About Us</li>
+        </ul>
+    </nav>
+
+    <div class="container min-h-[72vh] bg-black text-white font-mono flex w-[80%] bg-[url('/bg.jpg')] bg-cover px-3 py-3 rounded-lg">
+        <div class="songlist ">
+            <h1 class="font-bold">Best of Charlie Puth</h1>
+            <div class="songItem h-12 flex bg-slate-800 w-96 m-[12px] justify-between items-center rounded-md ring-2 ring-purple-900 hover:ring-4">
+                <img src="cover1.png" alt="1" class="w-12 mx-3 rounded-[34px]">
+                <span class="songName">Attention</span>
+                <span class="songListPlay"><span class="timestamp">03:51 <i id="1" class="fas songItemPlay fa-play-circle cursor-pointer"></i></span>
+            </span>
+            </div>
+            <div class="songItem h-12 flex bg-slate-800 w-96 m-[12px] justify-between items-center rounded-md ring-2 ring-purple-900 hover:ring-4">
+                <img src="2.jpg" alt="1" class="w-12 mx-3 rounded-[34px]">
+                <span class="songName">Charlie Be Quiet</span>
+                <span class="songListPlay"><span class="timestamp">02:09 <i id="2" class="fas songItemPlay fa-play-circle cursor-pointer"></i></span>
+            </span>
+            </div> <div class="songItem h-12 flex bg-slate-800 w-96 m-[12px] justify-between items-center rounded-md ring-2 ring-purple-900 hover:ring-4">
+                <img src="3.jpeg" alt="1" class="w-12 mx-3 rounded-[34px]">
+                <span class="songName">Light Switch</span>
+                <span class="songListPlay"><span class="timestamp">03:24 <i id="3" class="fas songItemPlay fa-play-circle cursor-pointer"></i></span>
+            </span>
+            </div> <div class="songItem h-12 flex bg-slate-800 w-96 m-[12px] justify-between items-center rounded-md ring-2 ring-purple-900 hover:ring-4">
+                <img src="4.jpg" alt="1" class="w-12 mx-3 rounded-[34px]">
+                <span class="songName">We Don't Talk Anymore</span>
+                <span class="songListPlay"><span class="timestamp">03:37 <i id="4" class="fas songItemPlay fa-play-circle cursor-pointer"></i></span>
+            </span>
+            </div> <div class="songItem h-12 flex bg-slate-800 w-96 m-[12px] justify-between items-center rounded-md ring-2 ring-purple-900 hover:ring-4">
+                <img src="5.jpg" alt="1" class="w-12 mx-3 rounded-[34px]">
+                <span class="songName">The Way I Am</span>
+                <span class="songListPlay"><span class="timestamp">03:04 <i id="5" class="fas songItemPlay fa-play-circle cursor-pointer"></i></span>
+            </span>
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom sticky h-28 bg-black bottom-0 flex items-center justify-center text-white flex-col ">
+        <input class="w-[80vw] cursor-pointer" type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons my-4 cursor-pointer">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="fas fa-3x fa-play-circle" id="masterPlay"></i> 
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo absolute left-[10vw]">
+            <img src="Animated Sound Wave.gif" alt="" class="w-11 h-11" id="gif"> <span id="masterSongName">Attention</span> 
+        </div>
+        <div class="volume absolute right-[10vw] text-white ">
+            <input type="range" name="range" id="volumebar" min="0" max="100">
+            <div class=" cursor-pointer">
+                <i class="fa-sharp fa-regular fa-xl fa-volume"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/19d7b9bf58.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

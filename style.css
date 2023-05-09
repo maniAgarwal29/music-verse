@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container{
+    margin: 23px auto;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
